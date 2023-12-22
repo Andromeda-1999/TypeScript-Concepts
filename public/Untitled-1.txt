@@ -1,0 +1,90 @@
+// void main()
+// {
+//   int age = 30;
+// //     age = 'sad';
+// //   error can not change the type of it 
+//   print(age);
+// }
+//statically typed programming language
+// void main()
+// {
+//   bool isNIght= true;
+
+//   print(isNIght);
+// }
+void main()
+{
+  dynamic age = 30;
+    age = 'sad';
+  print(age);
+  String greet= greeting();
+  int numbers= numner();
+  print(numbers);
+  print(greet);
+  List<int> ages=[30,40,30];
+  List names=['sad',30,40,30];
+  ages.add(80);
+  names.add(80);
+  print(names);
+}
+String greeting(){return "name of string";}
+String greets()=>  "name of string";
+int numner(){return 30;}
+void main(){
+  Car one= Car('blue',2019);
+  print(one.year);
+   print(one.color);
+  Car two=Car('red',2019);
+   print(two.year);
+   print(two.color);
+  two.modelname();
+  Super three=Super('pink',2019);
+  three.modelname();
+  three.modelnamepublish();
+}
+class Car{
+  String color='car';
+  int year=2;
+  Car(String color,int year)
+  {
+    this.color=color;
+    this.year=year;
+  }
+  
+  void modelname(){print('cultus 2020');}
+}
+class Super extends Car{
+  
+  Super(String color,int year):super(color,year);
+  
+  void modelnamepublish(){print('cultus model name publish 2020 ');}
+}
+void main(){
+  Car one= Car('blue',2019);
+  print(one.year);
+   print(one.color);
+  Car two=Car('red',2019);
+   print(two.year);
+   print(two.color);
+  two.modelname();
+  Super three=Super('pink',2019);
+  three.modelname();
+  three.modelnamepublish();
+}
+class Car{
+  String color='car';
+  int year=2;
+  Car(String color,int year)
+  {
+    this.color=color;
+    this.year=year;
+  }
+  
+  void modelname(){print('cultus 2020');}
+}
+class Super extends Car{
+  
+  Super(String color,int year):super(color,year);
+  
+  void modelnamepublish(){print('cultus model name publish 2020 ');}
+}
